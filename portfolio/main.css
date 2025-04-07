@@ -1,0 +1,97 @@
+body {
+  background-color: #e7ffdc !important;
+  font-family: Arial, sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+h2 { /*header dw*/
+  font-family: Arial Black;
+  font-size: 24px;
+  margin-bottom: 1.5rem;
+}
+
+h3 { /*film titles*/
+  font-family: Century Schoolbook;
+  font-size: 30px !important;
+  font-style: italic;
+}
+
+h4{ /*film dates*/
+  font-size: 20px !important;
+  width: 900px !important;
+}
+
+h5{ /* body text */
+  font-size: 14px !important;
+}
+
+h6{
+  font-size: 30px !important;
+}
+.newheader {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add spacing between the logo and the text */
+}
+
+.logo-img {
+  height: 60px; /* Set the height to match the text */
+  width: auto; /* Maintain the aspect ratio */
+  
+}
+.newheader > .ms-3 {
+  margin-left: 0; /* Reset any conflicting margin */
+}
+.nav-links a {
+  margin-right: 12px;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+.newheader {
+  background-color: #f21b42;
+  color: #ffffff;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 250px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px; /* Adjust spacing */
+}
+
+.nav-links a {
+  color: white; /* Makes text white */
+  text-decoration: none; /* Removes underline */
+}
+
+.nav-links a:hover {
+  text-decoration: underline; /* Optional: Underline on hover for usability */
+}
+
+body {
+  padding-top: 110px;
+  padding-left: 97px;
+}
+
+img {
+  width: 600px;
+}
+
+img2 {
+  width: 400px
+}
