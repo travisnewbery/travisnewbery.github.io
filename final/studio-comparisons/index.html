@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio comparisons</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">1980-2024 domestic box office data exploration</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../shifting-priorities/index.html">Shifting priorities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Studio comparisons</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container py-5">
+    <h1 class="mb-4">Studio comparisons</h1>
+    <p>          Another interesting aspect of this dataset is being able to compare the total grosses in movie studios’ libraries. For this to be done, I went through the hundreds of individual distribution companies on the original dataset and corrected each one to who owns their library today through mergers and acquisitions. For example, Disney did not release the original Star Wars movies, but it has since acquired Lucasfilm and 20th Century Fox, so the grosses of the 5 Star Wars movies released after 1980 before Disney bought Lucasfilm in 2012 are considered part of Disney for the sake of this dataset.
+    </p>
+  </div>
+  <div class="container my-5">
+    <div class="row">
+      <!-- Text block on the left -->
+      <div class="col-md-4 pe-md-4">
+     
+        <p>
+          These charts compare the parent companies of the Big Five movie studios: Comcast (Universal Studios), Paramount, Warner Bros. Discovery, Disney, and Sony. I have also included 2 mini-major studios that make up sizable parts of the domestic box office, Amazon (Metro-Goldwyn-Mayer) and Lionsgate.
+        </p>
+        <p>
+          Disney and its massive library of films is the clear forerunner in this comparison. Not only does it own major active franchises/brands like Pixar, Star Wars and Marvel, but with the acquisition of former major studio 20th Century Fox and its subsidiaries, it has become a unique juggernaut. Disney, with its library films, is the only studio to have ever made more than $3 billion domestically in one year, doing so 8 times between 2006 and 2019. And in 2019, the last year before COVID-19 totally reshaped the box office, Disney and its libraries claimed 39% of the domestic box office top 200 with only 12% of top 200 movies. Disney’s libraries having over 10% more of the total box office gross since 1980 compared to any other studio is not a shock here.
+        </p>
+      </div>
+  
+      <!-- Chart block on the right -->
+      <div class="col-md-8">
+        <div class="mb-4">
+          <iframe title="Yearly gross shares of 5 majors/2 mini-majors and their libraries" aria-label="Stacked Columns" id="datawrapper-chart-4RsxU" src="https://datawrapper.dwcdn.net/4RsxU/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="420" data-external="1"></iframe>
+          <script type="text/javascript">
+            !function() {
+              "use strict";
+              window.addEventListener("message", (function(a) {
+                if (void 0 !== a.data["datawrapper-height"]) {
+                  var e = document.querySelectorAll("iframe");
+                  for (var t in a.data["datawrapper-height"])
+                    for (var r, i = 0; r = e[i]; i++)
+                      if (r.contentWindow === a.source) {
+                        var d = a.data["datawrapper-height"][t] + "px";
+                        r.style.height = d;
+                      }
+                }
+              }))
+            }();
+          </script>
+        </div>
+        <div>
+          <iframe title="Total gross by studio libraries since 1980" aria-label="Pie Chart" id="datawrapper-chart-yypaz" src="https://datawrapper.dwcdn.net/yypaz/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="410" data-external="1"></iframe>
+          <script type="text/javascript">
+            !function() {
+              "use strict";
+              window.addEventListener("message", (function(a) {
+                if (void 0 !== a.data["datawrapper-height"]) {
+                  var e = document.querySelectorAll("iframe");
+                  for (var t in a.data["datawrapper-height"])
+                    for (var r, i = 0; r = e[i]; i++)
+                      if (r.contentWindow === a.source) {
+                        var d = a.data["datawrapper-height"][t] + "px";
+                        r.style.height = d;
+                      }
+                }
+              }))
+            }();
+          </script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <div class="container">
+      <p class="mb-0">© Travis Newbery 2025<br>
+      made with Visual Studio Code and GitHub</p>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

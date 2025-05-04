@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shifting priorities</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="../styles.css" />
+    <style>
+        /* Adjust iframe styles for responsiveness */
+        .datawrapper-chart {
+            width: 100%;
+            /* You can remove the fixed height if the Datawrapper script handles it well */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">1980-2024 domestic box office data exploration</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="../shifting-priorities/index.html">Shifting priorities</a>
+                    </li>
+                    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../studio-comparisons/index.html">Studio comparisons</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  <!-- Page Content -->
+  <div class="container py-5">
+    <h1 class="mb-4">Shifting priorities</h1>
+    <p>Interpreting this dataset in a couple different ways, one can see how studios have shifted their releasing priorities in response to market trends since 1980. 
+    </p>
+  </div>
+    <div class="container my-5">
+      <div class="row">
+        <!-- Text Block (1/3 width) -->
+        <div class="col-md-4 mb-4">
+          <p>
+            The first is how much adapted/franchise content studios release. Undoubtedly, since roughly the turn of the
+            century, the box office has been dominated by franchises like <em>Star Wars</em>, <em>Marvel</em>,
+            <em>Harry Potter</em>, <em>Twilight</em> and <em>Despicable Me</em> at a rate never before seen.
+          </p>
+          <p>
+            In addition, the success of wholly original movies in general has decreased in comparison to other kinds of
+            adaptations, like from books. In 1980, 3 of the top 10 releases were sequels to earlier movies (<em>The Empire
+            Strikes Back</em>, <em>Any Which Way You Can</em>, and <em>Smokey and the Bandit II</em>), and 2 were book
+            adaptations (<em>Coal Miner’s Daughter</em> and <em>The Blue Lagoon</em>).
+          </p>
+          <p>
+            Meanwhile, in 2024, the only top 10 movie that wasn’t a sequel was <em>Wicked</em>, but it is an adaptation
+            thrice over. The other 9 were direct sequels: <em>Inside Out 2</em>, <em>Deadpool & Wolverine</em> (Marvel
+            franchise, adapting Marvel comics), <em>Moana 2</em>, <em>Despicable Me 4</em>, <em>Beetlejuice Beetlejuice</em>,
+            <em>Dune: Part Two</em>, <em>Twisters</em>, <em>Mufasa: The Lion King</em>, and <em>Sonic the Hedgehog 3</em>.
+          </p>
+          <p>
+            Studios have clearly learned that audience familiarity can be a huge driving factor in new releases’
+            financial success, and have oversaturated the market with both the newest entries in large franchises,
+            and new adaptations from already successful brands in other mediums (<em>Barbie</em> and
+            <em>The Super Mario Bros. Movie</em> were the top 2 domestic grossing movies in 2023).
+          </p>
+          <p>
+            Since 2020, only 3 movies across 5 years of top 10s have been wholly original: <em>Onward</em>,
+            <em>Tenet</em>, and <em>Sound of Freedom</em>.
+          </p>
+        </div>
+    
+        <!-- Chart Block (2/3 width) -->
+        <div class="col-md-8">
+          <!-- First Datawrapper Chart -->
+          <div class="mb-4">
+            <iframe title="Non-original releases in the top 10 of each year" aria-label="Column Chart"
+              id="datawrapper-chart-76r4h"
+              src="https://datawrapper.dwcdn.net/76r4h/1/"
+              scrolling="no" frameborder="0"
+              style="width: 0; min-width: 100% !important; border: none;" height="412" data-external="1"></iframe>
+          </div>
+    
+          <!-- Second Datawrapper Chart -->
+          <div>
+            <iframe title="Original vs. non-original market shares (top 10)" aria-label="Stacked Columns"
+              id="datawrapper-chart-ZpGma"
+              src="https://datawrapper.dwcdn.net/ZpGma/1/"
+              scrolling="no" frameborder="0"
+              style="width: 0; min-width: 100% !important; border: none;" height="430" data-external="1"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Datawrapper resizing script -->
+    <script type="text/javascript">
+      !function () {
+        "use strict";
+        window.addEventListener("message", function (a) {
+          if (void 0 !== a.data["datawrapper-height"]) {
+            var e = document.querySelectorAll("iframe");
+            for (var t in a.data["datawrapper-height"])
+              for (var r, i = 0; r = e[i]; i++)
+                if (r.contentWindow === a.source) {
+                  var d = a.data["datawrapper-height"][t] + "px";
+                  r.style.height = d;
+                }
+          }
+        });
+      }();
+    </script>
+    
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-12">
+          <p>
+            Somewhat related to this is the increased share of opening weekend grosses compared to a movie’s total gross. In 1980, the average opening weekend gross was 14.27% of a movie’s total gross. In 2024, it was 36.46%. More franchise movies being released means audiences might want to see them sooner, for reasons like resolving cliffhangers made by previous entries, and to prevent being spoiled about certain plot points/characters one would already be familiar with. The biggest movies have become “cinematic events,” frontloading ticket sales and breaking opening weekend records over and over again, instead of less involved movies making their money from longer release legs promoted by word-of-mouth.
+          </p>
+          <div class="mt-3">
+            <iframe title="Opening weekend % of total gross" aria-label="Interactive line chart" id="datawrapper-chart-wbezq" src="https://datawrapper.dwcdn.net/wbezq/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="397" data-external="1"></iframe>
+            <script type="text/javascript">
+              !function() {
+                "use strict";
+                window.addEventListener("message", (function(a) {
+                  if (void 0 !== a.data["datawrapper-height"]) {
+                    var e = document.querySelectorAll("iframe");
+                    for (var t in a.data["datawrapper-height"])
+                      for (var r, i = 0; r = e[i]; i++)
+                        if (r.contentWindow === a.source) {
+                          var d = a.data["datawrapper-height"][t] + "px";
+                          r.style.height = d;
+                        }
+                  }
+                }))
+              }();
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="container my-4">
+      <div class="row">
+        <div class="col-12">
+          <p>
+            Another big change has been the popularization of the PG-13 MPAA rating. Since it was introduced in 1984, grosses made by PG-13 movies have increasingly overshadowed ones made by the other ratings. Before this, filmmakers and studios could make movies in one of two ways. They could go the G and PG route, ratings not necessarily specifically for childrens’ movies, but highly compatible with them because of a lack of cursing, violence, sex, or drugs. If a more serious movie was being made with a target of having a PG rating, it would have to be innocent enough for a kid to watch it, no matter how dramatic it may have been. On the flip side, they could go for an R rating, have virtually no limits on curse words, gore and sex. These are movies clearly marketed for adults, with no one under the age of 17 even being able to buy a ticket alone. But with these two very disparate modes comes the need for a middle path. What if you were the father of a 14-year-old, and you wanted to take them to a movie at a more sophisticated level than the content of a movie 7-year-olds are eating up, but with less graphic content than one made strictly for adults? The PG-13 rating as a middle-of-the-road catch-all has since dominated the box office, being marketable to everyone above 13 (or younger, at their parents’ discretion based on the PG-13 qualities of a given movie) who might not want the graphic overindulgences of an R-rated movie, or teens who are not quite ready for R-rated material yet.
+          </p>
+          <div class="mt-3">
+            <iframe title="Market shares of top 10 movies sorted by MPAA rating (USD)" aria-label="Stacked Columns" id="datawrapper-chart-Mimna" src="https://datawrapper.dwcdn.net/Mimna/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="457" data-external="1"></iframe>
+            <script type="text/javascript">
+              !function() {
+                "use strict";
+                window.addEventListener("message", (function(a) {
+                  if (void 0 !== a.data["datawrapper-height"]) {
+                    var e = document.querySelectorAll("iframe");
+                    for (var t in a.data["datawrapper-height"])
+                      for (var r, i = 0; r = e[i]; i++)
+                        if (r.contentWindow === a.source) {
+                          var d = a.data["datawrapper-height"][t] + "px";
+                          r.style.height = d;
+                        }
+                  }
+                }))
+              }();
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+      <div class="container">
+        <p class="mb-0">© Travis Newbery 2025<br>
+        made with Visual Studio Code and GitHub</p>
+      </div>
+    </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
